@@ -1,3 +1,6 @@
+### Live Demo: https://youtu.be/CsoKuTsO14Y?si=UIw2osBDRbzV3hx0
+Link to Webstie: [LockedIn on Firebase](https://lockedin-b8981.web.app/)
+
 ## Inspiration 
 After struggling to focus during study sessions or simply doing chores, I noticed how "1 game of Clash Royale" became 10 or how "5 minutes of TikTok" would become an hour. So I thought about making a timer that gamifies tasks that need to be done.
 
