@@ -1,0 +1,136 @@
+body {
+    background-color: #121212;
+    color:white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+#timer {
+    font-size: 4rem;
+    margin: 20px;
+}
+.set-time {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Progress Bar */
+#progressContainer {
+    width: 80%;
+    height: 20px;
+    background: #333;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background : linear-gradient(90deg, #00ff88, #0099ff);
+    transition: width 1s linear;
+}
+
+/* XP & Streak Display */
+#stats {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* To-Do List */
+#todoList {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+#todoContainer {
+    width: 80%;
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: left;
+    color: white;
+}
+
+#newTask {
+    width: 70%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: white;
+}
+
+#todoContainer button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 6px;
+    background: #00ff88;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#todoContainer button:hover {
+    background: #00cc6a;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#taskList li {
+    background: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#taskList input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+/* glow animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px gold; }
+  100% { box-shadow: 0 0 0 transparent; }
+}
+
+.glow {
+  animation: glow 1s ease-out;
+}

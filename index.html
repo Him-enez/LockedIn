@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <!--  -->
+<body>
+  <h1>LockedIn</h1>
+  <div id="authSection">
+  <button id="loginBtn" onclick="login()">Login with Google</button>
+  <button id="logoutBtn" onclick="logout()" style="display:none;">Logout</button>
+  </div>
+
+
+  <div class="set-time">
+    <label for="minutesInput">Set Minutes:</label>
+    <input id="minutesInput" type="number" min="1" max="120" value="60" oninput="updateFromInput()">
+  </div>
+
+  <div id="timer">60:00</div>
+
+  <!-- Progress bar -->
+  <div id="progressContainer">
+    <div id="progressBar"></div>
+  </div>
+
+  <!-- XP & Streak display -->
+  <div id="stats">
+    <p id="xpDisplay">⭐ XP: 0</p>
+    <p id="levelDisplay">🧩 Level: 1</p>
+    <p id="streakDisplay">🔥 Streak: 0 days</p>
+  </div>
+
+  <div class="controls">
+    <button onclick="startTimer()">Start</button> <!-- This adds button and calls the function from script.js to start--> 
+    <button onclick="pauseTimer()">Pause</button> <!-- This adds button and calls the function from script.js to pause--> 
+    <button onclick="resetTimer()">Reset</button> <!-- This adds button and calls the function from script.js to reset--> 
+  </div>
+
+  <!-- To-Do list section -->
+   <h2>To-Do List</h2>
+   <div id = "todoContainer">
+    <input id = "newTask" type = "text" placeholder = "Add a new task...">
+    <button onclick = "addTask()">Add</button>
+    <ul id = "taskList"></ul>
+   </div>
+   
+   <button id = "removeAllBtn" onclick = "removeAllTasks()">🗑️ Remove All Tasks</button>
+
+
+  <!--   -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
